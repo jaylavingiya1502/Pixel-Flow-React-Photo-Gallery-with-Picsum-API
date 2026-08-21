@@ -1,0 +1,21 @@
+.image-container {
+  height: 160px;
+  width: 100%;
+  max-width: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+

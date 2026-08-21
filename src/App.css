@@ -1,0 +1,68 @@
+.app {
+  background-color: black;
+  min-height: 100vh;
+  padding: 16px;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 8px;
+  flex: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+}
+
+.page-button {
+  background-color: #fbbf24;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid #fbbf24;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.page-button-current{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+
+.page-button-current:hover{
+  border: 2px solid #fbbf24;
+  color: #fbbf24;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25%;
+}
+
+.page-button:hover {
+  border: 2px solid #fbbf24;
+  color: #fbbf24;
+  background-color: rgb(0, 0, 0);
+}
+
+.page-button:active {
+  transform: scale(0.95);
+}
+
+.loading {
+  color: #d1d5db;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
